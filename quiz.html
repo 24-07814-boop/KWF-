@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Quiz</title>
+<link rel="stylesheet" href="css/style.css">
+<script src="js/quiz.js"></script>
+</head>
+<body>
+
+<header>
+<h1>Quiz System</h1>
+</header>
+
+<div class="content">
+
+<div id="quiz-container">
+
+    <h2 id="question"></h2>
+
+    <!-- MULTIPLE CHOICE -->
+    <div id="options">
+        <button onclick="answerMC(0)" id="opt0"></button>
+        <button onclick="answerMC(1)" id="opt1"></button>
+        <button onclick="answerMC(2)" id="opt2"></button>
+    </div>
+
+    <!-- IDENTIFICATION -->
+    <div id="inputBox" style="display:none;">
+        <input type="text" id="textAnswer" placeholder="I-type ang sagot">
+        <button onclick="answerID()">Submit</button>
+    </div>
+
+    <p id="result"></p>
+
+    <button onclick="nextQuestion()">Next</button>
+
+</div>
+
+</div>
+
+</body>
+</html>
